@@ -3,17 +3,17 @@
         "title":"网页类",
         "data":[
             {
-                "title":"皮皮泡",
-                "img":"https://github.com/lang999/egwang186/blob/master/js3.0/saohuotv.png",
-                "分类地址":'getVar("baseURL")+"/list/分类-翻页.html";',
+                "title":"1920",
+                "img":"https://gitcode.net/egwang186/iptv/-/raw/master/onebox/1920.png",
+                "分类地址":'getVar("baseURL")+"/index.php/vod/show/id/分类/page/翻页.html";',
                 "首页地址":'getVar("baseURL")+"/";',
-                "baseURL":'"https://www.pipipao.com";',
+                "baseURL":'"https://1920.video";',
                 "rule":{
-                    "首页规则":'var 列表=getVar("源码").match(/<li>[\\s]*?<div class="v_img"[\\s\\S]*?<\\/li>/g);var 标题规则=".get(.v_title a).t()";var 地址规则=".get(.v_title a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".get(div.v_note).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";',
-                    "筛选数据":'var a="分类+电影=1+电视剧=2+动漫=4+喜剧片=6+爱情片=7+恐怖片=8+动作片=9+科幻片=10+大陆剧=20+TVB=21+韩剧=22+美剧=23+日剧=24";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页+"+b;a+"\\n"+b;',
-                    "分类规则":'var 列表=getVar("源码").match(/<li>[\\s]*?<div class="v_img"[\\s\\S]*?<\\/li>/g);var 标题规则=".get(.v_title a).t()";var 地址规则=".get(.v_title a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".get(div.v_note).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE=baseURL+e2Rex(getVar("源码"),".get(section.page).byt(下一页).a(href)");var PREPAGE="";',
-                    "选集规则":'var 分类=e2Rex(getVar("源码"),".get(ul#play_link)").match(/<li[\\s\\S]*?\\/li>/g);var 线路=e2Rex(getVar("源码"),".get(ul.from_list)").match(/<li[\\s\\S]*?\\/li>/g);var 简介=e2Rex(getVar("源码"),".get(p.p_txt)");var 列表规则=".get(a)";var 标题规则=".get(li).t()";var 选集规则=".get(a).t()";var 选集地址规则=".get(a).a(href)";',
-                    "搜索规则":'var URL=baseURL+"/search.php?searchword="+getVar("KEY");var 源码=getHttp(URL);var 列表=源码.match(/<li>[\\s]*?<div class="v_img[\\s\\S]*?<\\/li>/g);var 标题规则=".get(.v_title a).t()";var 地址规则=".get(.v_title a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".get(div.v_note).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";',
+                    "首页规则":'var 列表=e2Arr(getVar("源码"),".get(div.module-items a.module-item)");var 标题规则=".get(a).a(title)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";',
+                    "筛选数据":'var a="分类+电影=1+电视剧=2+动漫=4+纪录=5+蓝光=7+国产剧=301+港台剧=302+日韩剧=303+欧美剧=304+动作片=201+喜剧片=202+爱情片=203+科幻片=204+剧情片=205";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;',
+                    "分类规则":'var 列表=e2Arr(getVar("源码"),".get(div.module-items a.module-item)");var 标题规则=".get(a).a(title)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";',
+                    "选集规则":'var 分类=e2Arr(getVar("源码"),".get(div.module-play-list)");var 线路=e2Arr(getVar("源码"),".get(div.module-tab-items div.module-tab-item)");var 简介=e2Rex(getVar("源码"),".get(div.module-info-content).t()");var 列表规则=".get(a)";var 标题规则=".t()";var 选集规则=".get(a).t()";var 选集地址规则=".get(a).a(href)";',
+                    "搜索规则":'var 列表=e2Arr(getVar("源码"),".get(div.module-card-item.module-item)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("搜索地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(div.module-card-item-title a).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE=""};',
                     "免嗅探规则":'"web="+getVar("url");'
                 }
             },
@@ -327,7 +327,7 @@
                 "img":"https://github.com/lang999/egwang186/blob/master/js3.0/HGyingshi.png",
                 "分类地址":'getVar("baseURL")+"?ac=list&class=分类&page=翻页";',
                 "首页地址":'getVar("baseURL")+"?ac=list&class=&start=&area=&type=&page=1";',
-                "baseURL":'"http://api.hgyx.vip/api.php/iptv/vod/";',
+                "baseURL":'"http://hgyx.vip/api.php/v1.vod";',
                 "rule":""
             },
             {
@@ -359,7 +359,7 @@
                 "img":"https://github.com/lang999/egwang186/blob/master/js3.0/naifeimi.png",
                 "分类地址":'getVar("baseURL")+"?type=分类&lang=&year=&page=翻页";',
                 "首页地址":'getVar("baseURL")+"/vodPhbAll";',
-                "baseURL":'"https://app.netflixmi.com/api.php/tv.vod";',
+                "baseURL":'"https://app.netflixmi.com/ruifenglb_api.php/provide/vod/";',
                 "rule":""
             },
             {
@@ -400,7 +400,7 @@
                 "img":"https://github.com/lang999/egwang186/blob/master/js3.0/tkys.png",
                 "分类地址":'getVar("baseURL")+"video?tid=分类&lang=&year=&pg=翻页";',
                 "首页地址":'getVar("baseURL")+"index_video?token=";',
-                "baseURL":'"https://www.tkys.tv/xgapp.php/v2/";',
+                "baseURL":'"http://tv.tkys.tv/api.php/iptv/vod/";',
                 "rule":""
             },
             {
