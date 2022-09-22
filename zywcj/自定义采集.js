@@ -29,7 +29,7 @@ var filename = '资源采集远程索引.txt';
 if (_.read(filename)) {
   var code = _.read(filename).match(/.+?,.+/g);
 } else {
-  var data = "内置,https://egwang186.coding.net/p/egwang186/d/iptv/git/raw/master/zywcj/资源网采集.txt";
+  var data = "内置,https://raw.githubusercontent.com/lang999/egwang186/master/zywcj/资源采集网.txt";
   _.write(data, filename);
   var code = _.read(filename).match(/.+?,.+/g);
 }
