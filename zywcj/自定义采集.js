@@ -2,7 +2,7 @@
 if(getVar("QJS")&&getVar("QJS")!="null"){
   eval(getVar("QJS"));
 }else{
-  eval(e2Rex(getHttp('https://egwang186.coding.net/p/egwang186/d/iptv/git/raw/master/aliyun/QJS.js'),'.dn64()'));
+  eval(e2Rex(getHttp('https://raw.githubusercontent.com/lang999/egwang186/master/aliyun/QJS.js'),'.dn64()'));
 }
 var filename = '资源采集远程索引.txt';
 var 记录 = "";
