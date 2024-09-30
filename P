@@ -97,13 +97,13 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "【长期有效】TG@wz2023jd § 0",
-        "【长期有效】TG@wz2023jd § 1",
-        "【长期有效】TG@wz2023jd § 2",
-        "【长期有效】TG@wz2023jd § 3",
-        "【长期有效】TG@wz2023jd § 4",
-        "【长期有效】TG@wz2023jd § 5",
-        "【长期有效】TG@wz2023jd § 6"
+        "【长期有效】p § 0",
+        "【长期有效】p § 1",
+        "【长期有效】p § 2",
+        "【长期有效】p § 3",
+        "【长期有效】p § 4",
+        "【长期有效】p § 5",
+        "【长期有效】p § 6"
       ],
       "default": "auto"
     },
@@ -111,13 +111,13 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "【长期有效】TG@wz2023jd § 0",
-        "【长期有效】TG@wz2023jd § 1",
-        "【长期有效】TG@wz2023jd § 2",
-        "【长期有效】TG@wz2023jd § 3",
-        "【长期有效】TG@wz2023jd § 4",
-        "【长期有效】TG@wz2023jd § 5",
-        "【长期有效】TG@wz2023jd § 6"
+        "【长期有效】p § 0",
+        "【长期有效】p § 1",
+        "【长期有效】p § 2",
+        "【长期有效】p § 3",
+        "【长期有效】p § 4",
+        "【长期有效】p § 5",
+        "【长期有效】p § 6"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -125,7 +125,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 0",
+      "tag": "【长期有效】p § 0",
       "server": "www.visa.com",
       "server_port": 80,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -142,7 +142,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 1",
+      "tag": "【长期有效】p § 1",
       "server": "www.visa.com",
       "server_port": 2095,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -159,7 +159,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 2",
+      "tag": "【长期有效】p § 2",
       "server": "www.visa.com",
       "server_port": 2052,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -176,7 +176,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 3",
+      "tag": "【长期有效】p § 3",
       "server": "www.visa.com",
       "server_port": 8880,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -193,7 +193,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 4",
+      "tag": "【长期有效】p § 4",
       "server": "www.visa.com",
       "server_port": 2082,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -210,7 +210,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 5",
+      "tag": "【长期有效】p § 5",
       "server": "www.visa.com",
       "server_port": 8080,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
@@ -227,7 +227,7 @@
     },
     {
       "type": "vless",
-      "tag": "【长期有效】TG@wz2023jd § 6",
+      "tag": "【长期有效】p § 6",
       "server": "www.visa.com",
       "server_port": 2086,
       "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
